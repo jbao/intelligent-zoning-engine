@@ -144,7 +144,8 @@ ui <- fillPage(
       leafletOutput("map", width="100%", height='100%'),
       div(id="map-controls",
           checkboxInput("show_utilization", "Auslastung anzeigen", value = TRUE),
-          checkboxInput("show_population", "Population anzeigen", value = FALSE)
+          checkboxInput("show_population", "Population anzeigen", value = FALSE),
+          selectInput('year', 'Jahr', c(2017, 2018, 2019, 2020, 2021), selectize = F)
           ),
       tabsetPanel(type="tabs", id="tabs",
                   tabPanel("Details", div(id='detail',

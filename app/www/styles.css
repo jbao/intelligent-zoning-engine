@@ -59,6 +59,10 @@ body {
   border-right: none;
 }
 
+#map-controls label {
+  font-weight: 400;
+}
+
 
 /*** Table ***/
 
